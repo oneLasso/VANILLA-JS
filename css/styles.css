@@ -1,0 +1,116 @@
+.bgimg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: no-repeat center;
+  background-size: 100%;
+  z-index: 1;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  margin: 0%;
+}
+
+#clock,
+#login-form,
+#greeting,
+#todo-form,
+#todo-list,
+#quote,
+#weather {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+}
+
+#clock {
+  font-size: 150px;
+  justify-content: center;
+  top: 20%;
+  left: 40%;
+}
+#login-form {
+  top: 50%;
+  left: 38%;
+  display: flex;
+  align-items: flex-end;
+}
+#login-form :first-child {
+  width: 500px;
+  height: 80px;
+  background: none;
+  border: none;
+  color: black;
+  border-bottom: 3px solid white;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 40px;
+  padding-left: 35px;
+}
+#login-form :last-child {
+  margin-left: 30px;
+  background: white;
+  border: none;
+  width: 150px;
+  height: 80px;
+  border-radius: 40px;
+  font-size: 20px;
+}
+
+#greeting {
+  top: 45%;
+  left: 46%;
+  font-size: 60px;
+}
+#todo-form {
+  top: 60%;
+  left: 47%;
+}
+#todo-form :first-child {
+  width: 300px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 20px;
+  padding-left: 28px;
+  border: none;
+}
+
+#todo-list {
+  flex-direction: column;
+  top: 65%;
+  left: 48%;
+  font-size: 22px;
+}
+#todo-list li :first-child {
+  margin-right: 20px;
+  background: none;
+  border: none;
+  background-color: none;
+}
+#todo-list li {
+  margin-bottom: 15px;
+}
+#quote {
+  width: 600px;
+  bottom: 2%;
+  margin-left: 20px;
+  font-size: 18px;
+  flex-direction: column;
+}
+#quote :last-child {
+  margin-top: 15px;
+}
+#weather {
+  flex-direction: column;
+  font-size: 18px;
+  bottom: 2%;
+  right: 1%;
+}
+#weather :last-child {
+  margin-top: 15px;
+}
+.hidden {
+  display: none !important;
+}
